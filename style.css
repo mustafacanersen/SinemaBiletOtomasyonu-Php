@@ -1,0 +1,123 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{    
+    background-color: #292929;
+    display: flex;
+    height: 100vh;
+
+}
+.container {
+    position: absolute;
+    top: 20%;
+    right: 20px;
+  }
+ .filmBilgileri{
+    position: absolute;    
+    top: 20%;
+    left: 35%;
+    color: wheat;
+ } 
+  form{
+    position:absolute;
+    top: 20%;
+    left: 20px;
+  }
+  .form-grup{
+   margin: 5px;
+  }
+
+  p{
+    color: wheat;
+  }
+  label{
+    color: wheat;
+  }
+
+.seat{
+    background-color: lime;
+    height: 30px;
+    width: 30px;
+    margin: 3px;
+    border-radius: 5px;
+    font-size: small;
+    text-align: center;
+    cursor: pointer;
+}
+.row{
+    display: flex;
+}
+.seat.selected{
+    background-color: aqua;
+}
+.seat.reserved{
+    background-color: red;
+}
+.seat:hover {
+    background-color: aqua;
+}
+.container.seat:hover{
+    cursor: pointer;
+}
+
+.seat:nth-of-type(2){
+    margin-right: 20px;
+}
+.seat:nth-last-of-type(3){
+    margin-right: 20px;
+}
+.screen{
+    background-color: wheat;
+    height: 50px;
+    width: 100%;
+    margin: 0 0 20px 0;
+    box-shadow: 0 3px 8px rgba(255,255 ,255, 0.7);
+}
+input{
+    margin-left: 10px;
+}
+select{
+    margin-left: 10px;
+}
+nav{
+    height: 8vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;    
+}
+a{
+    text-decoration: none;
+    color: red;
+    transition: 0.3s;
+}
+a:hover{
+    color: wheat;
+}
+.filmEkle{
+    margin: 5px;
+}
+button{
+    width: 100px;
+    height: 30px;
+}
+.seansEkle{
+    margin: 5px;
+    color: wheat;
+}
+.hasilat{
+    margin: 5px;
+    color: wheat;
+}
+.hesap{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+#hasilatSpan{
+    color: red;
+}
